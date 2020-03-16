@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<!--  CHANGE THE RESOLUTION  -->
+
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="ad.size" content="width=303,height=303">
+  <script src="lottie.min.js"></script>
+
+</head>
+
+<body>
+  <div id="container_dc">
+    <div id="content_dc"></div>
+
+  </div>
+  <script>
+    var AnimationContainer = document.getElementById('content_dc');
+    var myAnim = bodymovin.loadAnimation({
+        container: AnimationContainer,
+        autoplay: true,
+        loop: true,
+        renderer: 'svg',
+        path: 'data.json',
+      })
+      .setSubframe(false)
+  </script>
+</body>
+
+</html>
